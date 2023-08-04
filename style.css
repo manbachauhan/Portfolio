@@ -1,0 +1,873 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+
+}
+
+/*  Header Section  */
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/bg.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    padding: 10px 10%;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 180px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 40px;
+    color: #fff;
+    padding: 3px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+
+}
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  About Me Section 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+#about {
+    padding: 40px 0;
+    color: #ababab;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.subtitle {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff
+}
+
+.about-col-2 p {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 300;
+}
+
+.social-link {
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+
+.social-link a {
+    margin-right: 50px;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #149ddd;
+    text-align: center;
+    border: 2px solid #149ddd;
+    border-radius: 70%;
+    padding: 10px 12px;
+
+
+}
+
+.social-link a:hover {
+
+    color: #fff;
+    text-decoration: none;
+}
+
+/*
+---------------------- About Eduction Section--------------------
+--------------------------------------------------------------------
+*/
+#about-eduction {
+    padding: 30px 0;
+    color: #ababab;
+
+}
+
+.edu {
+    border: 3px solid gray;
+    padding: 8px 10px;
+    margin-top: 5px;
+}
+
+.edu li {
+    padding: 20px;
+    list-style: none;
+}
+
+.about-edu-1 {
+    flex-basis: 35%;
+
+    animation: 5s ease 0s 1 slideInLeft;
+}
+
+.about-edu-1 h1 {
+    font-size: 35px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.about-edu-1 h1 i {
+
+    color: #fff;
+}
+
+.about-edu-1 h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.about-edu-2 {
+    flex-basis: 55%;
+    animation: 5s ease 0s 1 slideInright;
+}
+
+.about-edu-2 img {
+    width: 100%;
+
+}
+
+/*
+-----------------------------------------  Skill Section --------------------------------
+
+*/
+
+#skill {
+    padding: 40px 0;
+    color: #ababab;
+
+
+}
+
+.text-row {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
+
+.row1 h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.skill-1 {
+    flex-basis: 40%;
+    animation: 8s ease 0s 1 slideInLeft;
+
+}
+
+.skill-1 video {
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+.skill-2 {
+    flex-basis: 50%;
+    animation: 8s ease 0s 1 slideInLeft;
+}
+
+.skill-2 h2 {
+    color: #149ddd;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.lang {
+    padding: 5px 0;
+    display: flex;
+
+}
+
+.lang li {
+
+    padding: 15px;
+    list-style: none;
+}
+
+.lang li img {
+    display: flex;
+    width: 100%;
+    border-radius: 60%;
+
+}
+
+.lang-text {
+    padding: 28px 10px;
+
+}
+
+.lang-text li {
+    padding: 15px 10px;
+    color: #fff;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    list-style: square;
+
+}
+
+/*
+ ----------------------------------   Work Section -------------------------------
+
+*/
+
+#work {
+    padding: 40px 0;
+
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    animation: 10s ease 0s 1 slideInLeft;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    display: block;
+}
+
+.layer {
+    background-color: #292626;
+    padding: 40px 40px;
+    border-radius: 10px;
+
+}
+
+.layer h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #149ddd;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #149ddd;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: right;
+
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #ff004f;
+}
+
+.layer a i {
+
+    float: right;
+
+}
+
+/* 
+-----------------------------------  Contact   ------------------------------
+
+*/
+
+.text {
+    text-align: center;
+    padding: 40px 20%;
+    font-size: 20px;
+    line-height: 25px;
+    /* animation: 5s ease 0s 1 slideInbottom; */
+}
+
+.contact-info {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20%;
+    /* animation: 5s ease 0s 1 slideInbottom; */
+
+}
+
+.contact-info form input,
+textarea {
+    padding: 10px 0px;
+    margin: 20px 20px;
+    width: 100%;
+    background: #8c8c8c;
+    color: #2c2929;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+textarea:hover {
+    background-color: #fff;
+}
+
+.myform label {
+    padding: 10px 0px;
+    margin: 15px 20px;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.btn-submit {
+    display: block;
+    font-size: 18px;
+    margin: 20px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    background: #080808;
+    color: #fff;
+    transition: background 0.5s;
+    align-items: baseline;
+}
+
+.btn-submit:hover {
+    background: #ff004f;
+}
+
+/*
+ ------------------------ Location  ----------------------------------
+ */
+
+.location {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20%;
+    text-align: center;
+}
+
+.location p {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+
+}
+
+.location p i {
+    margin: 10px;
+    color: #ff004f;
+}
+
+.social {
+
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30%;
+    text-align: center;
+
+}
+
+.social a {
+    text-align: center;
+    margin: 20px;
+}
+
+.social a i {
+    color: #149ddd;
+}
+
+.social a :hover {
+    color: #fff;
+}
+
+/*  downlooad cv css */
+
+.btn.btn2 {
+    text-align: left;
+    margin: 0px;
+}
+
+
+nav .fas {
+
+    display: none;
+}
+
+/* ----------------------------Css Media Quires---------------------- */
+
+/*  For Phone  */
+
+@media only screen and (max-width:600px) {
+    #header {
+        background-image: url('img/bg_phone5.png');
+    }
+
+    .header-text {
+
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .header-text h1 {
+        margin-top: 50%;
+        font-size: 30px;
+
+    }
+
+    nav .fas {
+
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .subtitle {
+        font-size: 40px;
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+
+    .about-col-2 {
+        font-size: 14px;
+    }
+
+    .about-edu-1,
+    .about-edu-2 {
+        flex-basis: 100%;
+    }
+
+    .about-edu-1 {
+        margin-bottom: 50px;
+    }
+
+    .about-edu-1 h1 {
+        font-size: 30px;
+    }
+
+    .skill-1,
+    .skill-2 {
+        flex-basis: 100%;
+    }
+
+    .skill-1 {
+        margin-bottom: 30px;
+    }
+
+    .skill-2 .lang-text {
+        font-size: 14px;
+    }
+
+    .text {
+        text-align: center;
+        padding: 20px 10%;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+
+}
+
+
+/*  For tablates  */
+@media (min-width: 481px) and (max-width: 767px) {
+    #header {
+        background-image: url('img/bg_phone5.png');
+    }
+
+    .header-text {
+
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .header-text h1 {
+        margin-top: 50%;
+        font-size: 30px;
+
+    }
+
+    nav .fas {
+
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .subtitle {
+        font-size: 40px;
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+
+    .about-col-2 {
+        font-size: 14px;
+    }
+
+    .about-edu-1,
+    .about-edu-2 {
+        flex-basis: 100%;
+    }
+
+    .about-edu-1 {
+        margin-bottom: 50px;
+    }
+
+    .about-edu-1 h1 {
+        font-size: 40px;
+    }
+
+    .skill-1,
+    .skill-2 {
+        flex-basis: 100%;
+    }
+
+    .skill-1 {
+        margin-bottom: 30px;
+    }
+
+    .skill-2 .lang-text {
+        font-size: 14px;
+    }
+
+    .text {
+        text-align: center;
+        padding: 20px 10%;
+        font-size: 15px;
+        /* font-weight: 300; */
+        line-height: 20px;
+    }
+
+
+
+
+}
+
+
+/*  For tablate poritesd  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #header {
+        background-image: url('img/bg_phone5.png');
+    }
+
+    .header-text {
+
+        font-size: 30px;
+        color: #fff;
+    }
+
+    .header-text h1 {
+        margin-top: 40%;
+        font-size: 50px;
+
+    }
+
+    nav .fas {
+
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .subtitle {
+        font-size: 50px;
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+
+    .about-col-2 {
+        font-size: 20px;
+    }
+
+    .about-col-2 p {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .about-edu-1 h4 {
+        font-size: 30px;
+    }
+
+    .about-edu-1 p {
+        font-size: 20px;
+    }
+
+    .about-edu-1 small {
+        font-size: 20px;
+    }
+
+    .about-edu-1,
+    .about-edu-2 {
+        flex-basis: 100%;
+    }
+
+    .about-edu-1 {
+        margin-bottom: 50px;
+    }
+
+    .about-edu-1 h1 {
+        font-size: 40px;
+    }
+
+    .skill-1,
+    .skill-2 {
+        flex-basis: 100%;
+    }
+
+    .skill-1 {
+        margin-bottom: 30px;
+    }
+
+    .skill-2 .lang-text {
+        font-size: 14px;
+    }
+
+    .text {
+        text-align: center;
+        padding: 20px 10%;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+
+}
+
+
+/* animation */
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideIntop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInright {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes slideInbottom {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
