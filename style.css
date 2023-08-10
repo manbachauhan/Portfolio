@@ -601,6 +601,13 @@ nav .fas {
         font-size: 14px;
         line-height: 20px;
     }
+    .layer h2 {
+    font-size: 18px;
+    }
+
+    .layer p {
+        font-size: 14px;
+    }
 
 
 }
@@ -693,7 +700,7 @@ nav .fas {
     }
 
     .skill-2 .lang-text {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .text {
@@ -703,7 +710,13 @@ nav .fas {
         /* font-weight: 300; */
         line-height: 20px;
     }
+.layer h2 {
+    font-size: 18px;
+    }
 
+    .layer p {
+        font-size: 14px;
+    }
 
 
 
