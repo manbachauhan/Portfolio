@@ -506,7 +506,7 @@ nav .fas {
 
 /*  For Phone  */
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:480px) {
     #header {
         background-image: url('img/bg_phone5.png');
     }
