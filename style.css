@@ -459,12 +459,14 @@ textarea:hover {
     color: #fff;
     font-size: 18px;
     font-weight: 300;
+    
 
 }
 
 .location a i {
     margin: 10px;
     color: #ff004f;
+    padding :5px 0;
 }
 
 .social {
