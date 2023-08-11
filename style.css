@@ -454,7 +454,7 @@ textarea:hover {
     text-align: center;
 }
 
-.location p {
+.location a {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
@@ -462,7 +462,7 @@ textarea:hover {
 
 }
 
-.location p i {
+.location a i {
     margin: 10px;
     color: #ff004f;
 }
@@ -717,6 +717,14 @@ nav .fas {
     .layer p {
         font-size: 14px;
     }
+    .location a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
 
 
 
@@ -837,6 +845,13 @@ nav .fas {
         font-size: 15px;
         line-height: 20px;
     }
+.location a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+
+}
 
 
 }
