@@ -468,6 +468,11 @@ textarea:hover {
     color: #ff004f;
     padding :5px 0;
 }
+.location p i {
+    margin: 10px;
+    color: #ff004f;
+    padding :5px 0;
+}
 
 .social {
 
