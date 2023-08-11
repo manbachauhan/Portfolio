@@ -1,4 +1,4 @@
-# My Portflio Webiste
+# My Portfolio Webiste
 
 My portfolio represents my passion for coding and the dedication I have towards crafting meaningful and impactful projects. 
 I believe that continuous learning is the key to success, and I am committed to refining my skills and exploring new technologies.
